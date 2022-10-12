@@ -44,8 +44,8 @@ resource "aws_security_group" "ec2_security_group" {
 
   ingress {
     description      = "ssh access"
-    from_port        = 22
-    to_port          = 22
+    from_port        = 443
+    to_port          = 443
     protocol         = "tcp"
     cidr_blocks      = ["108.48.102.126/32"]
   }
